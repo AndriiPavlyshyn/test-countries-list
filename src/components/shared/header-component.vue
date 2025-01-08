@@ -26,8 +26,8 @@ import { useAuth0 } from '@auth0/auth0-vue'
 
 const { loginWithRedirect, logout: logoutAction, user, isAuthenticated } = useAuth0();
 
-  const login = () => loginWithRedirect();
-  const logout = () => logoutAction({ returnTo: window.location.origin });
+const login = () => loginWithRedirect();
+const logout = () => logoutAction({ returnTo: window.location.origin });
 
 </script>
 
